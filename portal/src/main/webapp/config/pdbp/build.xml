@@ -1,0 +1,18 @@
+<project>
+       <target name="sass.compile">
+        <property name="source.dir" value="." />
+        <property name="global.dir" value="../../styles" />
+        <property name="output.dir" value="." />
+
+        <apply executable="C:\Ruby\bin\sass.bat" dest="${output.dir}" verbose="true" force="true" failonerror="true">
+          <arg value="--unix-newline" />
+          <srcfile />
+          <targetfile />
+          <fileset dir="${source.dir}" includes="**/*.scss,**/*.sass" excludes="**/_*" />
+          <firstmatchmapper>
+            <globmapper from="*.sass" to="*.css" />
+            <globmapper from="*.scss" to="*.css" />
+          </firstmatchmapper>
+        </apply>
+    </target>
+</project>

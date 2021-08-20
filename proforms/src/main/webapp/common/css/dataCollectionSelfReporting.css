@@ -1,0 +1,29 @@
+.sticky-wrapper {
+	display: table-row;
+	position: absolute;
+    right: 0;
+}
+#selfReport_actionButtons {
+	text-align: right;
+}
+
+#selfReport_actionButtons input {
+	width: 100px;
+	height: 25px;
+	background: #F2F2F2;
+	text-align: left;
+	border: 1px solid black;
+	border-top: 0;
+	border-radius: 0;
+}
+#selfReport_actionButtons div:first-child input {
+	border-top: 1px solid black;
+}
+
+#divdataentryform > table {
+	width: 89%;
+}
+
+.boldText {
+	font-weight: 800 !important;
+}
